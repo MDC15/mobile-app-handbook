@@ -1,0 +1,19 @@
+expo react_native
+
+username: manhdevtoi
+pass: manh1501@Dev
+
+
+npx eslint  #Check code
+
+
+buid app native test local 
+	
+	npx expo prebuild -p android --clean
+	npx expo prebuild --clean
+	npx expo prebuild 
+ 	npx expo run
+ 	
+
+
+git reset --hard <commit_id>

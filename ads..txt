@@ -1,0 +1,5 @@
+🚨 3. Các loại quảng cáo hoạt động như thế nào?
+• 	Quảng cáo trong app thường hoạt động qua các SDK như:
+• 	Banner Ads: hiển thị ở dưới hoặc trên màn hình
+• 	Interstitial Ads: quảng cáo toàn màn hình khi chuyển cảnh
+• 	Rewarded Ads: người dùng xem quảng cáo để nhận phần thưởng

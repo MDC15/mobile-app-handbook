@@ -1,0 +1,62 @@
+git checkout -b feature origin/feature-auth
+
+flutterfire.bat configure
+
+ flutter analyze 
+
+dart run flutter_native_splash:create --flutter_native_splash.yaml 
+
+
+flutter build apk --debug
+adb install -r build/app/outputs/flutter-apk/app-debug.apk
+
+flutter build apk --release
+adb install -r build/app/outputs/flutter-apk/app-release.apk
+
+dart fix --apply --code=unused_import
+
+Supabase 
+project: gps_tracker_app
+pass: devApp01GPS
+
+
+google map 
+       <meta-data 
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD41UnQRYy6WYNMTE0DEgiePA0I38OXxY4"/>
+
+
+
+
+    <!-- Quyền mạng -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+<!-- Quyền vị trí -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+<!-- Quyền camera -->
+<uses-permission android:name="android.permission.CAMERA" />
+
+<!-- Nếu cần ghi đọc file khi chụp ảnh / lưu GPS log -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+
+
+<queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https"/>
+        </intent>        
+    </queries>
