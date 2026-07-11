@@ -6,7 +6,6 @@ flutterfire.bat configure
 
 dart run flutter_native_splash:create --flutter_native_splash.yaml 
 
-
 flutter build apk --debug
 adb install -r build/app/outputs/flutter-apk/app-debug.apk
 
@@ -14,19 +13,6 @@ flutter build apk --release
 adb install -r build/app/outputs/flutter-apk/app-release.apk
 
 dart fix --apply --code=unused_import
-
-Supabase 
-project: gps_tracker_app
-pass: devApp01GPS
-
-
-google map 
-       <meta-data 
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD41UnQRYy6WYNMTE0DEgiePA0I38OXxY4"/>
-
-
-
 
     <!-- Quyền mạng -->
 <uses-permission android:name="android.permission.INTERNET" />
